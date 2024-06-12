@@ -5,3 +5,13 @@
 b{
     text-transform: uppercase;
 }
+.active{
+    background-color: #B0CC0D !important;
+    color: white !important;
+}
+.active svg{
+    color: white !important;
+}
+.active h6{
+    color: white !important;
+}
