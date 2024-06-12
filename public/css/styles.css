@@ -510,8 +510,14 @@ video {
 .bottom-\[-170px\] {
   bottom: -170px;
 }
+.bottom-\[-180px\] {
+  bottom: -180px;
+}
 .left-0 {
   left: 0px;
+}
+.left-\[-180px\] {
+  left: -180px;
 }
 .left-\[-20px\] {
   left: -20px;
@@ -534,6 +540,9 @@ video {
 .right-\[-50px\] {
   right: -50px;
 }
+.right-\[-75px\] {
+  right: -75px;
+}
 .right-\[-80px\] {
   right: -80px;
 }
@@ -555,8 +564,8 @@ video {
 .top-\[-200px\] {
   top: -200px;
 }
-.top-\[-230px\] {
-  top: -230px;
+.top-\[-250px\] {
+  top: -250px;
 }
 .top-\[-40px\] {
   top: -40px;
@@ -575,6 +584,36 @@ video {
 }
 .top-\[70px\] {
   top: 70px;
+}
+.top-0 {
+  top: 0px;
+}
+.top-\[20px\] {
+  top: 20px;
+}
+.top-\[-20px\] {
+  top: -20px;
+}
+.top-\[-70px\] {
+  top: -70px;
+}
+.top-\[-100px\] {
+  top: -100px;
+}
+.top-\[100px\] {
+  top: 100px;
+}
+.top-\[-150px\] {
+  top: -150px;
+}
+.top-\[-180px\] {
+  top: -180px;
+}
+.top-\[-190px\] {
+  top: -190px;
+}
+.top-\[-230px\] {
+  top: -230px;
 }
 .z-10 {
   z-index: 10;
@@ -597,9 +636,6 @@ video {
 }
 .mb-\[11px\] {
   margin-bottom: 11px;
-}
-.mb-\[12px\] {
-  margin-bottom: 12px;
 }
 .mb-\[15px\] {
   margin-bottom: 15px;
@@ -657,6 +693,9 @@ video {
 }
 .mt-\[30px\] {
   margin-top: 30px;
+}
+.mb-\[12px\] {
+  margin-bottom: 12px;
 }
 .inline-block {
   display: inline-block;
@@ -829,17 +868,17 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.px-\[110px\] {
-  padding-left: 110px;
-  padding-right: 110px;
-}
-.px-\[120px\] {
-  padding-left: 120px;
-  padding-right: 120px;
+.px-\[150px\] {
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
+}
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
 }
 .px-\[27px\] {
   padding-left: 27px;
@@ -877,6 +916,26 @@ video {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.px-\[1px\] {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.px-\[130px\] {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.px-\[120px\] {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.px-\[110px\] {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
 .pb-\[100px\] {
   padding-bottom: 100px;
 }
@@ -903,9 +962,6 @@ video {
 }
 .pb-\[44px\] {
   padding-bottom: 44px;
-}
-.pb-\[50px\] {
-  padding-bottom: 50px;
 }
 .pb-\[86px\] {
   padding-bottom: 86px;
@@ -954,6 +1010,21 @@ video {
 }
 .pt-\[57px\] {
   padding-top: 57px;
+}
+.pt-\[\] {
+  padding-top: ;
+}
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+.pt-\[80px\] {
+  padding-top: 80px;
+}
+.pb-\[\] {
+  padding-bottom: ;
+}
+.pb-\[50px\] {
+  padding-bottom: 50px;
 }
 .text-center {
   text-align: center;
@@ -1133,14 +1204,6 @@ b{
     bottom: -150px;
   }
 
-  .md\:bottom-\[-220px\] {
-    bottom: -220px;
-  }
-
-  .md\:left-\[-200px\] {
-    left: -200px;
-  }
-
   .md\:left-\[-60px\] {
     left: -60px;
   }
@@ -1153,20 +1216,12 @@ b{
     right: -17px;
   }
 
-  .md\:right-\[-75px\] {
-    right: -75px;
-  }
-
   .md\:right-\[100px\] {
     right: 100px;
   }
 
   .md\:right-\[180px\] {
     right: 180px;
-  }
-
-  .md\:top-\[-250px\] {
-    top: -250px;
   }
 
   .md\:top-\[-60px\] {
@@ -1185,12 +1240,32 @@ b{
     top: 47px;
   }
 
-  .md\:bottom-\[-320px\] {
-    bottom: -320px;
+  .md\:top-\[-250px\] {
+    top: -250px;
   }
 
-  .md\:bottom-\[-20px\] {
-    bottom: -20px;
+  .md\:right-\[-75px\] {
+    right: -75px;
+  }
+
+  .md\:left-\[-180px\] {
+    left: -180px;
+  }
+
+  .md\:bottom-\[-180px\] {
+    bottom: -180px;
+  }
+
+  .md\:bottom-\[-220px\] {
+    bottom: -220px;
+  }
+
+  .md\:left-\[-200px\] {
+    left: -200px;
+  }
+
+  .md\:bottom-\[-320px\] {
+    bottom: -320px;
   }
 
   .md\:bottom-\[-250px\] {
@@ -1199,22 +1274,6 @@ b{
 
   .md\:top-0 {
     top: 0px;
-  }
-
-  .md\:top-\[30px\] {
-    top: 30px;
-  }
-
-  .md\:top-\[-30px\] {
-    top: -30px;
-  }
-
-  .md\:top-\[-80px\] {
-    top: -80px;
-  }
-
-  .md\:top-\[-100px\] {
-    top: -100px;
   }
 
   .md\:top-\[-140px\] {
@@ -1340,16 +1399,20 @@ b{
     padding-right: 54px;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
-  }
-
   .md\:pt-\[40px\] {
     padding-top: 40px;
   }
 
   .md\:pt-\[54px\] {
     padding-top: 54px;
+  }
+
+  .md\:pt-\[50px\] {
+    padding-top: 50px;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-4xl {
