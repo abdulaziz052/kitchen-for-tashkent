@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="">
     <!-- Header start -->
     <header class="pt-5 md:pb-[63px] pb-[44px]">
         <div class="max-w-[1240px] px-5 mx-auto">
@@ -74,22 +74,23 @@
     </header>
     <!-- Header end -->
     <!-- Hero start -->
-    <section class="">
-        <div class="max-w-[1240px] px-5 mx-auto">
+    <section class="pb-[135px] md:pb-[110px] overflow-hidden md:pt-[40px]">
+        <div class="max-w-[1240px] px-5 mx-auto relative">
             <div
-                class="!overflow-x-hidden max-w-[1200px] w-full bg-[#B0CC0D] md:pl-[120px] pl-[20px] z-20 relative md:pt-[54px] pt-[26px] pb-[214px] md:pb-[47px] md:rounded-[55px] rounded-[21px]">
+                class=" max-w-[1200px] w-full bg-[#B0CC0D] md:pl-[120px] pl-[20px] z-20 relative md:pt-[54px] pt-[26px] pb-[214px] md:pb-[47px] md:rounded-[55px] rounded-[21px]">
                 <h1
                     class="md:max-w-[400px] max-w-[227px]  font-bold text-[32px] md:text-[65px] md:leading-[65px] leading-[32px] uppercase text-[#FFFFFF] md:mb-[20px]">
                     Your personal cook</h1>
                 <p class="font-normal text-base md:text-[25px] leading-[59px] text-[#000000] md:mb-[20px]">The balanced
                     diet for every day</p>
                 <button
-                    class="py-[18px] px-[27px] bg-[#FFA800] transition-all   hover:bg-[#FFFFFF] hover:text-[#B0CC0D] rounded-[32px] font-bold text-base text-[#FFFFFF]">Make
+                    class="pb-[22px] py-[18px] px-[27px] bg-[#FFA800] transition-all   hover:bg-[#FFFFFF] hover:text-[#B0CC0D] rounded-[32px] font-bold text-base text-[#FFFFFF]">Make
                     your choice</button>
-                <img class="absolute top-[30px] right-[-70px] z-50" src="./img/big-meal.png" alt="">
-                <img class="md:flex hidden   absolute top-[10px] left-[550px]" src="./img/part-of-big-meal.png" alt="">
-                <img class="w-[583px] absolute top-[50px] right-[100px]  z-10 " src="./img/hole.png" alt="">
-                <img class="flex  absolute top-0  md:left-[0px]" src="./img/leave-2.png" alt="">
+                <img class="absolute top-[30px] md:flex hidden  right-[-80px] z-50" src="./img/big-meal.png" alt="">
+                <img class="absolute md:hidden w-[391px] right-[-20px] top-[300px] flex z-50" src="./img/big-meal-mobile.png" alt="">
+                <img class="md:flex hidden   absolute top-[-130px] left-[360px]" src="./img/part-of-big-meal.png" alt="">
+                <img class="absolute md:top-[47px] top-[290px] right-[-50px] md:right-[100px]  z-10 " src="./img/hole.png" alt="">
+                <img class="flex  absolute top-[70px]  left-[130px] md:top-[310px] md:rotate-0 rotate-180 md:left-[-80px]" src="./img/leave-2.png" alt="">
             </div>
         </div>
     </section>
@@ -101,8 +102,8 @@
                 <h4 class="uppercase font-bold text-[32px] mb-[40px]">Delivery areas</h4>
                 <form class="flex" action="">
                     <input placeholder="Enter your address"
-                        class="rounded-[23px] py-[25px] mb-[37px] w-full pl-[22px] bg-[#F4F4F4]" type="search"><img
-                        class="absolute right-[40px] bottom-[-170px] md:bottom-[-150px] md:right-[180px]"
+                        class="rounded-[23px] py-[25px] mb-[37px] w-full pl-[22px] bg-[#F4F4F4]" type="search">
+                        <img class="absolute right-[40px] bottom-[-170px] md:bottom-[-150px] md:right-[180px]"
                         src="./img/delivery/search.svg" alt="">
                 </form>
                 <iframe class="max-w-[1200px] w-full"
@@ -159,13 +160,17 @@
     <section class="bg-[#B0CC0D] overflow-hidden pt-[21px] pb-[30px]">
         <div class="max-w-[1240px] mx-auto px-5">
             <div class="absolute">
-                <h3 class="font-bold max-w-[350px] mb-[17px] uppercase text-white text-[40px]">1 day at the  price of 23$</h3>
-                <p class="font-normal text-[20px] text-white max-w-[386px] mb-4">Make orders, take part in promotions, recommend us to friends or connect
-                    recommend us to friends or connect  </p>
-                    <button class="text-[#B0CC0D] font-bold text-base capitalize px-[59px] py-[18px] rounded-[32px] bg-white">sign in</button>
-                    </div>
-                    </div>
-                <img class="w-[1000px]  relative  top-[0px] right-[-20  0px]" src="./img/23$section/salad-box.png" alt="">
+                <h3 class="font-bold max-w-[350px] mb-[17px] uppercase text-white text-[40px]">1 day at the price of 23$
+                </h3>
+                <p class="font-normal text-[20px] text-white max-w-[386px] mb-4">Make orders, take part in promotions,
+                    recommend us to friends or connect
+                    recommend us to friends or connect </p>
+                <button
+                    class="text-[#B0CC0D] font-bold text-base capitalize px-[59px] py-[18px] rounded-[32px] bg-white">sign
+                    in</button>
+            </div>
+        </div>
+        <img class="w-[1000px]  relative  top-[0px] right-[-20  0px]" src="./img/23$section/salad-box.png" alt="">
     </section>
 
     <!-- 1 day at the price of 23$ end -->
