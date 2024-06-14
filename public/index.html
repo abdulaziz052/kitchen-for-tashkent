@@ -11,37 +11,40 @@
 </head>
 <!-- swiper styles -->
 <style>
-    html,
+      html,
     body {
-        position: relative;
-        height: 100%;
+      position: relative;
+      height: 100%;
     }
 
     body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
     }
 
     .swiper {
-        width: 220px;
+      width: 100%;
+      height: 100%;
     }
 
     .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .swiper-wrapper {
-        display: flex;
-        gap: 8px;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 </style>
 <!-- swiper styles -->
@@ -243,107 +246,192 @@
 
             <!-- firs Swiper end -->
             <!-- weeks start -->
-            <div class="bg-[#B0CC0D] pt-[38px] pb-[54px] pl-[39px] rounded-[15px] w-full">
+            <div class="bg-[#B0CC0D] pt-[38px] pb-[54px] md:pl-[39px] pl-[20px] flex rounded-[15px] w-full">
                 <div class="md:flex flex-row-reverse  gap-[7px]">
-                    <div class="flex flex-row-reverse ">
+                    <div class="flex ">
                         <!-- weeks swiper start -->
-                        <div class="swiper mySwiper3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide bg-inherit">
-                                    <div class="flex flex-col text-center">
-                                        <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
-                                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="swiper-button-next w-[32px]" src="./img/our-menu/right-btn.svg" alt="">
-                            <img class="swiper-button-prev w-[32px]" src="./img/our-menu/ph_arrow-circle-left-thin (1).svg" alt="">
-                        </div>
-
-
+                        <img class="absolute hidden md:flex  top-[890px] right-[115px]" src="./img/our-menu/leaver.png" alt="">
+                        
                         <!-- weeks swiper end -->
-                        <div class="flex w-full gap-[8px] mr-[60px]">
+                        <div class="md:flex hidden w-full gap-[8px] ">
+                            <div class="flex gap-[8px] justify-between">
 
-                            <div id="activeBox3"
+                                <div id="activeBox3"
                                 class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px] active3">
                                 <span class="text-[#302929] font-medium text-[16px]">Monday</span>
                             </div>
-                            <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                                <span class="text-[#302929] font-medium text-[16px]">Tuesday</span>
-                            </div>
-                            <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                                <span class="text-[#302929] font-medium text-[16px]">Wednesday</span>
-                            </div>
-                            <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                                <span class="text-[#302929] font-medium text-[16px]">Thursday</span>
-                            </div>
-                            <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                                <span class="text-[#302929] font-medium text-[16px]">Friday</span>
-                            </div>
-                            <div id="activeBox3"
+                                <div id="activeBox3" 
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                                    <span class="text-[#302929] font-medium text-[16px]">Tuesday</span>
+                                </div>
+                                <div id="activeBox3"
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                                    <span class="text-[#302929] font-medium text-[16px]">Wednesday</span>
+                                </div>
+                                <div id="activeBox3"
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                                    <span class="text-[#302929] font-medium text-[16px]">Thursday</span>
+                                </div>
+                                <div id="activeBox3"
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                                    <span class="text-[#302929] font-medium text-[16px]">Friday</span>
+                                </div>
+                                <div id="activeBox3"
                                 class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
                                 <span class="text-[#302929] font-medium text-[16px]">Saturday</span>
                             </div>
                             <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                                <span class="text-[#302929] font-medium text-[16px]">Sunday</span>
-                            </div>
+                            class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                            <span class="text-[#302929] font-medium text-[16px]">Sunday</span>
                         </div>
-
+                            </div>
+                </div>
+                
+            </div>
+            <!-- responsive swiper start -->
+            <div class="swiper mySwiper3 max-w-[200px] flex md:hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
                     </div>
-
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-inherit">
+                        <div class="flex flex-col text-center">
+                            <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
+                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <img class="swiper-button-next  w-[32px]" src="./img/our-menu/right-btn.svg" alt="">
+                <img class="swiper-button-prev  w-[32px]" src="./img/our-menu/ph_arrow-circle-left-thin (1).svg" alt="">
+            </div>
+            
+            <div class="flex md:hidden gap-[4px] justify-center">
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>Mo</h5>
                 </div>
-                <!-- weeks end -->
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>Tu</h5>
+                </div>
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>We</h5>
+                </div>
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>Th</h5>
+                </div>
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>Fr</h5>
+                </div>
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>Sa</h5>
+                </div>
+                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                    <h5>Su</h5>
+                </div>
+            </div>
 
+
+            <!-- responsive swiper end -->
+            
+        </div>
+        <div class="md:flex hidden">
+        <div class="swiper mySwiper3 max-w-[300px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-inherit">
+                    <div class="flex flex-col text-center">
+                        <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
+                        <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="swiper-button-next w-[32px] absolute z-50" src="./img/our-menu/right-btn.svg" alt="">
+            <img class="swiper-button-prev w-[32px]" src="./img/our-menu/ph_arrow-circle-left-thin (1).svg" alt="">
+        </div>
+
+        </div>
+                <!-- weeks end -->  
             </div>
         </div>
     </section>
@@ -932,7 +1020,7 @@
     <script>
         var swiper = new Swiper(".mySwiper3", {
             spaceBetween: 0,
-
+            slidesPerView: 1,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
