@@ -661,8 +661,14 @@ video {
 .mt-\[30px\] {
   margin-top: 30px;
 }
-.block {
-  display: block;
+.mr-auto {
+  margin-right: auto;
+}
+.mr-\[20px\] {
+  margin-right: 20px;
+}
+.mr-\[60px\] {
+  margin-right: 60px;
 }
 .inline-block {
   display: inline-block;
@@ -697,14 +703,38 @@ video {
 .w-\[313px\] {
   width: 313px;
 }
+.w-\[35px\] {
+  width: 35px;
+}
 .w-\[391px\] {
   width: 391px;
+}
+.w-\[50px\] {
+  width: 50px;
 }
 .w-\[575px\] {
   width: 575px;
 }
 .w-full {
   width: 100%;
+}
+.w-\[70px\] {
+  width: 70px;
+}
+.w-\[px\] {
+  width: px;
+}
+.w-\[20px\] {
+  width: 20px;
+}
+.w-\[38px\] {
+  width: 38px;
+}
+.w-\[30px\] {
+  width: 30px;
+}
+.w-\[32px\] {
+  width: 32px;
 }
 .max-w-\[1200px\] {
   max-width: 1200px;
@@ -749,14 +779,26 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
 .flex-col {
   flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 .flex-wrap {
   flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-between {
   justify-content: space-between;
@@ -797,6 +839,12 @@ video {
 .gap-\[7px\] {
   gap: 7px;
 }
+.gap-\[8\] {
+  gap: 8;
+}
+.gap-\[8px\] {
+  gap: 8px;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -823,6 +871,9 @@ video {
 }
 .rounded-\[32px\] {
   border-radius: 32px;
+}
+.rounded-\[5px\] {
+  border-radius: 5px;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -950,6 +1001,9 @@ video {
 .pb-\[32px\] {
   padding-bottom: 32px;
 }
+.pb-\[40px\] {
+  padding-bottom: 40px;
+}
 .pb-\[42px\] {
   padding-bottom: 42px;
 }
@@ -958,6 +1012,9 @@ video {
 }
 .pb-\[50px\] {
   padding-bottom: 50px;
+}
+.pb-\[54px\] {
+  padding-bottom: 54px;
 }
 .pb-\[86px\] {
   padding-bottom: 86px;
@@ -982,6 +1039,9 @@ video {
 }
 .pr-\[23px\] {
   padding-right: 23px;
+}
+.pr-\[38px\] {
+  padding-right: 38px;
 }
 .pr-\[80px\] {
   padding-right: 80px;
@@ -1015,9 +1075,6 @@ video {
 }
 .pt-\[80px\] {
   padding-top: 80px;
-}
-.pb-\[54px\] {
-  padding-bottom: 54px;
 }
 .text-center {
   text-align: center;
@@ -1333,6 +1390,10 @@ b{
 
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .md\:items-center {
