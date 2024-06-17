@@ -11,40 +11,46 @@
 </head>
 <!-- swiper styles -->
 <style>
-      html,
+    html,
     body {
-      position: relative;
-      height: 100%;
+        position: relative;
+        height: 100%;
     }
 
     body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
     }
 
     .swiper {
-      width: 100%;
-      height: 100%;
+        width: 100%;
+        height: 100%;
     }
 
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width:375px) {
+        .swiper {
+            height: 52px;
+            margin-bottom: 14px;
+        }
     }
 </style>
 <!-- swiper styles -->
@@ -140,7 +146,7 @@
             </div>
             <a class="py-[20px] px-[20px] bg-[#FFA800] md:hidden inline-block rounded-full mt-[30px]"
                 href="tel:+998907550145">
-                <img src="./img/еудуащт.svg" alt="">
+                <img src="./img/telephone.svg" alt="">
             </a>
         </div>
     </section>
@@ -151,7 +157,7 @@
         <div class="max-w-[1240px] mx-auto px-5">
             <h2 class="uppercase mb-[40px] font-bold text-[32px]">Our MENU</h2>
 
-            <div class="md:flex hidden gap-[27px] mb-[40px] justify-between">
+            <div class="md:flex hidden gap-[27px] mb-[40px] justify-between relative z-50">
                 <div id="activeBox2"
                     class="px-[8px] py-[6px]  bg-[#D9D9D9] flex flex-col rounded-[10px] w-full text-center  uppercase cursor-pointer active2">
                     <h4 class="text-[#6A6A6A] font-bold text-lg">Power</h4>
@@ -189,7 +195,7 @@
                 </div>
             </div>
             <!-- firs Swiper start -->
-            <div class="swiper mySwiper2 flex  md:hidden pb-[40px]">
+            <div class="swiper mySwiper2 flex  md:hidden pb-[40px] pt-[30px]">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide bg-inherit">
                         <div id="activeBox2"
@@ -234,9 +240,9 @@
                             <p class="text-[#6A6A6A] font-bold text-xs ">1500 kcal</p>
                         </div>
                     </div>
-                    <div class="swiper-slide bg-inherit">
+                    <div class="swiper-slide  bg-inherit">
                         <div id="activeBox2"
-                            class="px-[40px] py-[6px] bg-[#D9D9D9] flex flex-col rounded-[10px]  text-center uppercase text-[#6A6A6A] cursor-pointer">
+                            class="px-[40px]  py-[6px] bg-[#D9D9D9] flex flex-col rounded-[10px]  text-center uppercase text-[#6A6A6A] cursor-pointer">
                             <h4 class=" font-bold text-lg text-[#6A6A6A]">Balance </h4>
                             <p class="text-[#6A6A6A] font-bold text-xs ">1300 kcal</p>
                         </div>
@@ -246,21 +252,22 @@
 
             <!-- firs Swiper end -->
             <!-- weeks start -->
-            <div class="bg-[#B0CC0D] pt-[38px] pb-[54px] md:pl-[39px] pl-[20px] flex rounded-[15px] w-full">
+            <div class="bg-[#B0CC0D] pt-[38px] pr-[40px] pb-[54px] md:pl-[39px] pl-[20px] flex rounded-[15px] w-full">
                 <div class="gap-[7px]">
                     <div class="flex ">
                         <!-- weeks swiper start -->
-                        <img class="absolute hidden md:flex  top-[890px] right-[115px]" src="./img/our-menu/leaver.png" alt="">
-                        
+                        <img class="absolute hidden md:flex  top-[890px] right-[115px]" src="./img/our-menu/leaver.png"
+                            alt="">
+
                         <!-- weeks swiper end -->
                         <div class="md:flex hidden w-full gap-[8px] ">
                             <div class="flex gap-[8px] justify-between">
 
                                 <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px] active3">
-                                <span class="text-[#302929] font-medium text-[16px]">Monday</span>
-                            </div>
-                                <div id="activeBox3" 
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px] active3">
+                                    <span class="text-[#302929] font-medium text-[16px]">Monday</span>
+                                </div>
+                                <div id="activeBox3"
                                     class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
                                     <span class="text-[#302929] font-medium text-[16px]">Tuesday</span>
                                 </div>
@@ -277,181 +284,362 @@
                                     <span class="text-[#302929] font-medium text-[16px]">Friday</span>
                                 </div>
                                 <div id="activeBox3"
-                                class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                                <span class="text-[#302929] font-medium text-[16px]">Saturday</span>
-                            </div>
-                            <div id="activeBox3"
-                            class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
-                            <span class="text-[#302929] font-medium text-[16px]">Sunday</span>
-                        </div>
-                            </div>
-                </div>
-                
-                <div class="md:flex hidden">
-                <div class="swiper mySwiper3 max-w-[300px]">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                                    <span class="text-[#302929] font-medium text-[16px]">Saturday</span>
+                                </div>
+                                <div id="activeBox3"
+                                    class="py-[14px] text-center px-[23px] bg-[#D8E686] cursor-pointer w-full rounded-[12px]">
+                                    <span class="text-[#302929] font-medium text-[16px]">Sunday</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
+
+                        <div class="md:flex hidden">
+                            <div class="swiper mySwiper3 max-w-[300px]">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg-inherit">
+                                        <div class="flex flex-col text-center">
+                                            <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
+                                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This
+                                                week
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="swiper-button-next w-[32px] absolute z-50"
+                                    src="./img/our-menu/right-btn.svg" alt="">
+                                <img class="swiper-button-prev w-[32px]"
+                                    src="./img/our-menu/ph_arrow-circle-left-thin (1).svg" alt="">
                             </div>
-                        </div>
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg-inherit">
-                            <div class="flex flex-col text-center">
-                                <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
-                                <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                                </p>
-                            </div>
+
                         </div>
                     </div>
-                    <img class="swiper-button-next w-[32px] absolute z-50" src="./img/our-menu/right-btn.svg" alt="">
-                    <img class="swiper-button-prev w-[32px]" src="./img/our-menu/ph_arrow-circle-left-thin (1).svg" alt="">
-                </div>
-        
-            </div>
-            </div>
-            <!-- responsive swiper start -->
-            <div class="swiper mySwiper3 max-w-[200px] flex md:hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
+                    <!-- responsive swiper start -->
+                    <div class="swiper mySwiper3 max-w-[200px] flex md:hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 1</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-inherit">
+                                <div class="flex flex-col text-center">
+                                    <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
+                                    <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="swiper-button-next  w-[32px]" src="./img/our-menu/right-btn.svg" alt="">
+                        <img class="swiper-button-prev  w-[32px]" src="./img/our-menu/ph_arrow-circle-left-thin (1).svg"
+                            alt="">
+                    </div>
+
+                    <div class="flex md:hidden gap-[4px] justify-center ">
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>Mo</h5>
+                        </div>
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>Tu</h5>
+                        </div>
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>We</h5>
+                        </div>
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>Th</h5>
+                        </div>
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>Fr</h5>
+                        </div>
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>Sa</h5>
+                        </div>
+                        <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
+                            <h5>Su</h5>
                         </div>
                     </div>
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 2</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 3</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 4</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 5</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 6</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg-inherit">
-                        <div class="flex flex-col text-center">
-                            <h5 class="font-bold text-2xl text-white">WEEK 7</h5>
-                            <p class="font-light text-base text-white bg-[#FFA800] rounded-[5px]">This week
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <img class="swiper-button-next  w-[32px]" src="./img/our-menu/right-btn.svg" alt="">
-                <img class="swiper-button-prev  w-[32px]" src="./img/our-menu/ph_arrow-circle-left-thin (1).svg" alt="">
-            </div>
-            
-            <div class="flex md:hidden gap-[4px] justify-center">
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>Mo</h5>
-                </div>
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>Tu</h5>
-                </div>
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>We</h5>
-                </div>
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>Th</h5>
-                </div>
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>Fr</h5>
-                </div>
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>Sa</h5>
-                </div>
-                <div id="activeBox3" class="text-center rounded-[5px] py-[7px] px-[7px] bg-[#D8E686]">
-                    <h5>Su</h5>
-                </div>
-            </div>
 
 
-            <!-- responsive swiper end -->
-            
-            <div>
-                <div class="max-w-[215px]">
+                    <!-- responsive swiper end -->
+                    <!-- Big swiper start -->
+                    <div class="pt-[10px]">
+                        <div class="swiper mySwiper5 pt-[30px] h-[356px] mx-auto">
+                            <div class="swiper-wrapper max-w-[200px] md:max-w-[215px]">
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] ">
 
-                    <img src="./img/our-menu/swiper-img-1.png" alt="">
-                    <h6>BREAKFAST 2</h6>
-                    <p>Chicken fricassee with mushrooms and bulgur</p>
-                    <ul>
-                        <li>Protein - 15 g</li>
-                        <li>Fat - 7 g</li>
-                        <li>Carbohydrates - 24 g</li>
-                        <li>Energy - 285 kсal</li>
-                        <li>Тotal weight: 345 g</li>
-                    </ul>
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0 relative">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] relative">
+
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0 relative">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] relative">
+
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0 relative">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] relative">
+
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0 relative">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] relative">
+
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0 relative">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] relative">
+
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide max-w-[215px]  rounded-[28px] pt-0 pb-0 relative">
+                                    <div
+                                        class="max-w-[215px] bg-[#FFFFFF] rounded-[28px] pl-[13px]  pr-[13px]  pb-[7px] relative">
+
+                                        <img class="" src="./img/our-menu/swiper-img-1.png" alt="">
+                                        <h6 class="text-[#B0CC0D] font-medium text-base mb-[10px]">BREAKFAST 2</h6>
+                                        <p
+                                            class="text-[#000000] font-medium text-base leading-[19px] max-w-[166px] mb-[7px]">
+                                            Chicken fricassee with mushrooms and bulgur</p>
+                                        <ul>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Protein - 15 g
+                                            </li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Fat - 7 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Carbohydrates -
+                                                24 g</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Energy - 285
+                                                kсal</li>
+                                            <li class="font-light text-xs leading-[21px] text-[#0A0909]">Тotal weight:
+                                                345 g</li>
+                                        </ul>
+                                        <span
+                                            class="font-extrabold text-2xl leading-[28px] text-[#FFFFFF] text-center bg-[#FFA800] py-[10px] px-[10px] top-[-5px] right-0 rounded-[50%] absolute">02</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                                        <img class="w-[80px] swiper-button-next" src="./img/our-menu/big-swiper-right.svg" alt="">
+                                                        <img class="w-[80px] swiper-button-prev" src="./img/our-menu/big-swiper-left.svg" alt="">
+                                                        <div class="swiper-pagination md:hidden flex ml-[60px]"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Big swiper end -->
+                    <!-- weeks end -->
+
+
+                    <div class="flex">
+                        <p class="text-[#FFFFFF] md:max-w-[1128px] max-w-[279px] font-normal text-base leading-[19px]">A balanced menu helps to maintain
+                            health and a slim figure, allows you to be cheerful and active throughout the week. While
+                            preparing our dishes, we use products from the best suppliers and always choose products
+                            that correspond to the concept of healthy nutrition. For example, lean beef, turkey and
+                            chicken, low-calorie sauces, pasta of hard varieties. Delivery is carried out every 2 days.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        
-            <!-- Big swiper end -->
-        </div>
-    <!-- weeks end -->  
-    <!-- Big swiper start -->
-
-                
             </div>
         </div>
     </section>
@@ -692,7 +880,7 @@
                 </div>
             </div>
             <!-- Swipeer Js start -->
-            <div class="swiper mySwiper flex md:hidden  mb-[42px]">
+            <div class="swiper mySwiper flex md:hidden  mb-[42px] pt-[80px] pb-[80px]">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide bg-inherit">
                         <div id="activeBox"
@@ -1048,6 +1236,37 @@
         });
     </script>
 
+    <script>
+        var swiper = new Swiper(".mySwiper5", {
+            slidesPerView: 1.3,
+            spaceBetween: 5,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5.2,
+          spaceBetween: 10,
+        },
+      },
+
+
+        });
+    </script>
     <!-- <script>
         // JavaScript kodini shu yerga yozamiz
         const numbers = [
