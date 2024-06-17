@@ -30,3 +30,24 @@ b{
 .active3{
     background-color: white !important;
 }
+.swiper-pagination1{
+    color: white !important;
+    border-color: white !important;
+    fill: white !important;
+    
+}
+.swiper-pagination-bullet{
+    border: 2px solid white !important;
+    border-color: white !important;
+    opacity: 1;
+    background-color: inherit;
+}
+
+
+
+.swiper-pagination-bullet-active{
+    color: white !important;
+    border-color: white !important;
+    background-color: white !important;
+
+}

@@ -619,10 +619,13 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                                                        <img class="w-[80px] swiper-button-next" src="./img/our-menu/big-swiper-right.svg" alt="">
-                                                        <img class="w-[80px] swiper-button-prev" src="./img/our-menu/big-swiper-left.svg" alt="">
-                                                        <div class="swiper-pagination md:hidden flex ml-[60px]"></div>
+
+                            <img class="w-[80px] swiper-button-next" src="./img/our-menu/big-swiper-right.svg" alt="">
+                            <img class="w-[80px] swiper-button-prev" src="./img/our-menu/big-swiper-left.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+
+                            <div class="swiper-pagination1 md:hidden  z-50 block max-w-[120px] justify-center"></div>
                         </div>
 
                     </div>
@@ -631,8 +634,10 @@
                     <!-- weeks end -->
 
 
+
                     <div class="flex">
-                        <p class="text-[#FFFFFF] md:max-w-[1128px] max-w-[279px] font-normal text-base leading-[19px]">A balanced menu helps to maintain
+                        <p class="text-[#FFFFFF] md:max-w-[1128px] max-w-[279px] font-normal text-base leading-[19px]">A
+                            balanced menu helps to maintain
                             health and a slim figure, allows you to be cheerful and active throughout the week. While
                             preparing our dishes, we use products from the best suppliers and always choose products
                             that correspond to the concept of healthy nutrition. For example, lean beef, turkey and
@@ -1242,7 +1247,7 @@
             spaceBetween: 5,
             loop: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-pagination1",
                 clickable: true,
             },
             navigation: {
@@ -1250,19 +1255,19 @@
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5.2,
-          spaceBetween: 10,
-        },
-      },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5.2,
+                    spaceBetween: 10,
+                },
+            },
 
 
         });
