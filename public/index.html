@@ -7,6 +7,9 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- swiper styles -->
@@ -60,9 +63,43 @@
     <header class="pt-5 md:pb-[63px] pb-[44px]">
         <div class="max-w-[1240px] px-5 mx-auto">
             <div class="flex justify-between items-center">
-                <button class="flex md:hidden mr-[6px]">
+                <button id="hamburger-menu" class="flex md:hidden mr-[6px]">
                     <img src="./img/hamburger-menu.svg" alt="">
                 </button>
+                <div id="responsive-menu" style="transition: .5s all;"
+                    class="z-30 transition-all md:hidden block  max-w-[322px] w-full  px-14  bg-[#a5c83c] fixed top-0 -left-full">
+                    <div class="flex items-center justify-between pt-[27px] ">
+                        <button id="close-menu">
+                            <i class="fa-solid fa-xmark fa-2xl" style="color: #fff;"></i>
+                        </button>
+                    </div>
+                    <ul class="text-center pt-[60px] flex flex-col gap-[48px] ">
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="#">Delivery</a>
+                        </li>
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="flex items-center justify-center gap-[32px] pb-[289px] pt-[30px]">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <a href="index.html">
                     <img class="w-[103px] md:w-[183px]" src="./img/Logo.png" alt="">
                 </a>
@@ -252,7 +289,8 @@
 
             <!-- firs Swiper end -->
             <!-- weeks start -->
-            <div class="bg-[#B0CC0D] pt-[38px] pr-[40px] pb-[54px] md:pl-[39px] pl-[20px] flex rounded-[15px] w-full relative">
+            <div
+                class="bg-[#B0CC0D] pt-[38px] pr-[40px] pb-[54px] md:pl-[39px] pl-[20px] flex rounded-[15px] w-full relative">
                 <div class="gap-[7px]">
                     <div class="flex ">
                         <!-- weeks swiper start -->
@@ -646,14 +684,17 @@
                             chicken, low-calorie sauces, pasta of hard varieties. Delivery is carried out every 2 days.
                         </p>
                     </div>
-                    <div class="bg-white  px-[24px] md:px-0  pl-[5px] pr-[20px] md:flex items-center text-center rounded-[15px] md:pb-0 pb-[14px]">
+                    <div
+                        class="bg-white  px-[24px] md:px-0  pl-[5px] pr-[20px] md:flex items-center text-center rounded-[15px] md:pb-0 pb-[14px]">
                         <div class=" md:flex items-center pl-[20px]">
                             <a href="#"
                                 class="hover:bg-[#B0CC0D] hover:underline md:mr-[17px] leading-[24px] font-bold text-[#B0CC0D] md:text-[#FFFFFF] text-[20px] rounded-[10px] pl-[7px] pr-[8px] py-[5px] md:bg-[#FFA800] transition-all uppercase flex items-center ">
-                                <img class="md:block hidden md:mr-[12px]" src="./img/our-menu/task-manager.svg" alt=""> from 56 <br class="md:block hidden"> gel/day
+                                <img class="md:block hidden md:mr-[12px]" src="./img/our-menu/task-manager.svg" alt="">
+                                from 56 <br class="md:block hidden"> gel/day
                                 <img class="md:block hidden md:ml-[3px]" src="./img/our-menu/arrow-back.svg" alt="">
                             </a>
-                            <p class="font-normal text-base md:text-[20px] text-[#000000] md:max-w-[130px] leading-[24px]">
+                            <p
+                                class="font-normal text-base md:text-[20px] text-[#000000] md:max-w-[130px] leading-[24px]">
                                 Total on Tuesday: 1435 kcal
                             </p>
                         </div>
@@ -681,8 +722,11 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="hover:bg-[#B0CC0D] hover:text-white transition-all md:ml-[60px]  font-bold text-base py-[18px] px-[65px] bg-[#FFA800] rounded-[32px] text-[#FFFFFF]" >Order now </button>
-                        <img class="absolute w-[131px] md:bottom-[-65px] md:right-[450px]" src="./img/our-menu/leave.png" alt="">
+                        <button
+                            class="hover:bg-[#B0CC0D] hover:text-white transition-all md:ml-[60px]  font-bold text-base py-[18px] px-[65px] bg-[#FFA800] rounded-[32px] text-[#FFFFFF]">Order
+                            now </button>
+                        <img class="absolute w-[131px] md:bottom-[-65px] md:right-[450px]"
+                            src="./img/our-menu/leave.png" alt="">
                     </div>
                 </div>
             </div>
@@ -1139,11 +1183,14 @@
                         placeholder="Your E-mail" type="email"><br>
                     <div class="md:flex  md:items-center ">
                         <button
-                            class="mb-[12px] md:mb-0 py-[18px] px-[70px] md:px-[26px] bg-[#FFA800] rounded-[32px] font-bold text-white text-base">Make
+                            class="hover:bg-white hover:text-[#B0CC0D] transition-all mb-[12px] md:mb-0 py-[18px] px-[70px] md:px-[26px] bg-[#FFA800] rounded-[32px] font-bold text-white text-base">Make
                             your choice</button>
                         <button
-                            class="flex   gap-[15px] items-center py-[14px] px-[80px] md:px-[26px] bg-[#B0CC0D] rounded-[32px]">
-                            <img src="./img/get-in-touch/plane-messager.svg" alt=""> <span
+                            class="flex  hover:bg-white group  gap-[15px] items-center py-[14px] px-[80px] md:px-[26px] bg-[#B0CC0D] rounded-[32px]">
+                            <svg class="text-white group-hover:text-[#B0CC0D]" width="31" height="29" viewBox="0 0 31 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.2108 1.04492C29.8931 0.776409 29.5085 0.598775 29.0977 0.530901C28.6869 0.463026 28.2653 0.507446 27.8778 0.65944L1.4563 11.0103C0.992872 11.1864 0.600331 11.5096 0.339121 11.9301C0.0779101 12.3506 -0.0374848 12.8451 0.0107042 13.3374C0.0536966 13.8296 0.255476 14.2945 0.585783 14.6626C0.91609 15.0307 1.35712 15.2821 1.84275 15.379L8.55548 16.7068V25.0731C8.55524 25.5257 8.68979 25.9682 8.94207 26.3444C9.19435 26.7206 9.55298 27.0135 9.97245 27.1861C10.2501 27.2975 10.5463 27.3557 10.8455 27.3574C11.1463 27.3585 11.4443 27.2997 11.722 27.1844C11.9997 27.0692 12.2516 26.8999 12.4629 26.6864L16.1842 22.9886L21.8092 27.9285C22.2244 28.2938 22.7583 28.4967 23.312 28.4996C23.5555 28.5046 23.7979 28.4659 24.0277 28.3854C24.4054 28.2661 24.7453 28.0507 25.0139 27.7602C25.2825 27.4697 25.4705 27.1144 25.5591 26.7292L30.9408 3.28641C31.0348 2.88189 31.0166 2.45945 30.888 2.06451C30.7594 1.66957 30.5252 1.31707 30.2108 1.04492ZM9.42856 14.551L2.30076 13.1375L22.2815 5.29946L9.42856 14.551ZM10.8455 25.0731V18.3058L14.4524 21.4753L10.8455 25.0731ZM23.3263 26.2153L11.5325 15.8644L28.5219 3.62905L23.3263 26.2153Z" fill="currentColor"/>
+                                </svg>
+                                 <span
                                 class="flex md:hidden text-[#FFFFFF] font-bold text-base">Telegram</span>
                         </button>
                     </div>

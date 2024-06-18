@@ -29,5 +29,21 @@ box3.forEach(function (item, index) {
         item.classList.add('active3')
     })
 })
+let resMenu = document.querySelector('#responsive-menu')
+let hamMenu = document.querySelector('#hamburger-menu')
+let closeMenu = document.querySelector('#close-menu')
+let body = document.querySelector('body')
+
+hamMenu.addEventListener('click', function () {
+    resMenu.classList.add("left-0")
+    body.classList.add('overflow-hidden')
+    resMenu.classList.remove("-left-full")
+})
+closeMenu.addEventListener('click', function () {
+    resMenu.classList.add("-left-full")
+    resMenu.classList.remove("left-0")
+    body.classList.remove('overflow-hidden')
+
+})
 
 
